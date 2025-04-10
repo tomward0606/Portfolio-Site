@@ -1,0 +1,96 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and HTML */
+  body, html {
+    height: 100%;
+    font-family: 'Courier New', monospace;
+    color: #eee;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  /* About Container */
+  .about-container {
+    text-align: center;
+    max-width: 1200px;
+    width: 80%;
+    position: relative;
+  }
+  
+  /* Title with Typing Animation */
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    animation: typing 3s steps(30) 1s 1 normal both;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  /* Typing Animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Subtext */
+  p {
+    font-size: 1.5rem;
+    color: #ccc;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 2s ease-out 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Hover Effects on Button */
+  button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #0ff;
+    color: #111;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    background-color: #111;
+    color: #0ff;
+  }
+  
+
+  /* Section with cool hover effects */
+  section {
+    margin: 50px 0;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(0, 255, 255, 0.5);
+  }
+  
